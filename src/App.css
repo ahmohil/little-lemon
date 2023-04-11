@@ -1,0 +1,11 @@
+.App{
+  max-width: 1240px;
+  margin: auto;
+  
+}
+
+:root{
+  --primary-color-1: #495E57;
+  --primary-color-2: #F4CE14;
+
+}

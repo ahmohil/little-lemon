@@ -1,0 +1,31 @@
+li{
+    list-style-type: none;
+}
+
+.navbar .nav-link{
+    color: var(--primary-color-1);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header{
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+
+
+
