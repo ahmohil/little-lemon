@@ -30,11 +30,12 @@ function Footer(){
            </div>   
            <div className='contact'>
                <strong className='footer-heading'>Social Media Links</strong>
-               
+               <div className='social-links'>
                <FaFacebook /> 
                <FaTwitter />
                <FaYoutube />
                <FaInstagram />
+               </div>
            </div>
         </footer>
      )
