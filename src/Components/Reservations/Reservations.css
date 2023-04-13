@@ -1,0 +1,14 @@
+.reservation-form form{
+    display: grid;
+    max-width: 600px;
+    gap: 20px;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.submit-button{
+    grid-column: span 2;
+    max-width: 150px;
+    margin: 20px auto;
+
+}
