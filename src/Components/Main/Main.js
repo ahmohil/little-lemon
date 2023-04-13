@@ -3,7 +3,7 @@ import Highglights from '../Highlights/Highlights';
 import Testimonials from '../Testimonials/Testimonials';
 import About from '../About/About';
 import {Routes, Route} from 'react-router-dom';
-import BookingPage from '../BookingPage/Bookingpage';
+import Reservations from '../Reservations/Reservations';
 
 function Main(){
     return(
@@ -11,7 +11,7 @@ function Main(){
             <Routes>
                 <Route path='/' element = { <><Hero /> <Highglights /></>} />
                 <Route path = '/about' element = {<>   <Testimonials /> <About /></>} />
-                <Route path = '/booking' element = { <BookingPage /> } />
+                <Route path = '/booking' element = { <Reservations /> } />
             </Routes>
         </main>
     )
