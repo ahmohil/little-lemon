@@ -12,3 +12,15 @@
     margin: 20px auto;
 
 }
+
+.reservation-page{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+.reservation-page h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
