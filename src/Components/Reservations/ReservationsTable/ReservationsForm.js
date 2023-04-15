@@ -7,11 +7,14 @@ import React, { useState } from 'react';
 
 
 function ReservationsForm(props) {
-    const [selectedDate, setSelectedDate] = useState('');
+    const currentDate = new Date().toISOString().split('T')[0];
+
+    const [selectedDate, setSelectedDate] = useState(currentDate);
     const [selectedTime, setSelectedTime] = useState('');
  
     function handleDateChange(event) {
         setSelectedDate(event.target.value);
+        props.setAvailableTimes({selectedDate: selectedDate});
     }
 
     function handleTimeChange(event) {
@@ -19,8 +22,7 @@ function ReservationsForm(props) {
         console.log(selectedTime);
     }
 
-    const currentDate = new Date().toISOString().split('T')[0];
-
+   
 
     return (
         <div className="reservation-form">
@@ -30,7 +32,7 @@ function ReservationsForm(props) {
                     id="date-picker"
                     name="booking-date"
                     min={currentDate}
-                    value={currentDate}
+                    value={selectedDate}
                     onChange={handleDateChange}
                 />
 
@@ -38,7 +40,7 @@ function ReservationsForm(props) {
                 <select id='reservation-time' value={selectedTime} onChange={handleTimeChange}>
                     <option value=''>Select a time</option>
                     {
-                        props.times.map((t)=>(
+                        props.availableTimes.map((t)=>(
                             <option key={t} value={t}> 
                                 {t}
                             </option>

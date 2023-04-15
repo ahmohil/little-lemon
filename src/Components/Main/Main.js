@@ -5,21 +5,30 @@ import About from '../About/About';
 import {Routes, Route} from 'react-router-dom';
 import Reservations from '../Reservations/Reservations';
 import React, {useReducer, useState} from 'react';
+import {fetchAPI, submitAPI}from '../../api';
 
 function Main(){
     
-    function setAvailableTimes(state, action){
+    const updateTimes = (state,action) =>{
+        const date = new Date(action.selectedDate);
+        return fetchAPI(date);
+    };
 
-    }
+    const initializeTimes = ()=>{
+        const today = new Date();
+        const availabeTimes = fetchAPI(today);
+        return availabeTimes;
+    };
 
-    const [state,dispatch] = useReducer(setAvailableTimes, ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'])
+    const [state,dispatch] = useReducer(updateTimes, initializeTimes());
 
+    
     return(
         <main>
             <Routes>
                 <Route path='/' element = { <><Hero /> <Highglights /></>} />
                 <Route path = '/about' element = {<>   <Testimonials /> <About /></>} />
-                <Route path = '/booking' element = { <Reservations times={state} /> } />
+                <Route path = '/booking' element = { <Reservations availableTimes={state} setAvailableTimes={dispatch} /> } />
             </Routes>
         </main>
     )
