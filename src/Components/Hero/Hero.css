@@ -2,10 +2,10 @@
 .hero-section{
     display: flex;
     background-color:var(--primary-color-1);
-    width: 100vw;
     justify-content: space-evenly;
     margin: 0px;
     height: 350px;
+    width: 100vw;
 }
 
 
@@ -21,12 +21,11 @@
 }
 .hero-image img{
     height: 400px;
-  
+    padding-right: 40px;
 }
 
 .hero-image{
-    margin-right: 10%;
-
+  padding: 40px;
 }
 
 .btn{
@@ -45,4 +44,14 @@
 
 .hero-text > p{
     color: #FFF;
+}
+
+@media screen and (max-width: 750px){
+    .hero-section{
+        height:fit-content;
+    }
+    
+    .hero-image{
+        margin : 0px;
+    }
 }

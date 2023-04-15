@@ -8,8 +8,8 @@ function Reservations(props)
         <div className = "reservation-page">
             <main>
             <h2>Reserve a table</h2>
-            <ReservationsForm availableTimes={props.availableTimes}/>
-            {console.log(props.availableTimes)}
+            <ReservationsForm times={props.times}/>
+            {console.log(props.times)}
             </main>
         </div>
     )

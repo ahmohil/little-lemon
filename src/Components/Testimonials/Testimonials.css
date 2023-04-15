@@ -5,6 +5,7 @@
     background-color: var(--primary-color-2);
     height: 70vh;
     padding: 40px;
+    padding-left: 0px;
 }
 
 .testimonials > h2{
@@ -30,7 +31,7 @@
 .testimonial-section{
     padding: 0% 100px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap:30px;
   
 

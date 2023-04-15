@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 
 
-function ReservationsForm(availableTimes) {
+function ReservationsForm(props) {
     const [selectedDate, setSelectedDate] = useState('');
     const [selectedTime, setSelectedTime] = useState('');
  
@@ -37,7 +37,12 @@ function ReservationsForm(availableTimes) {
                 <label htmlFor='reservation-time'>Chose time: </label>
                 <select id='reservation-time' value={selectedTime} onChange={handleTimeChange}>
                     <option value=''>Select a time</option>
-                    {console.log(availableTimes)
+                    {
+                        props.times.map((t)=>(
+                            <option key={t} value={t}> 
+                                {t}
+                            </option>
+                        ))
                     }
                 </select>
 
