@@ -8,7 +8,7 @@ function Reservations(props)
         <div className = "reservation-page">
             <main>
             <h2>Reserve a table</h2>
-            <ReservationsForm availableTimes={props.availableTimes} setAvailableTimes ={props.setAvailableTimes}/>
+            <ReservationsForm availableTimes={props.availableTimes} setAvailableTimes ={props.setAvailableTimes} onSubmit = {props.onSubmit}/>
             {console.log(props.times)}
             </main>
         </div>

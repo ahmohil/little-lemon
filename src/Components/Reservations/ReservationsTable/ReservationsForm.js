@@ -11,7 +11,8 @@ function ReservationsForm(props) {
 
     const [selectedDate, setSelectedDate] = useState(currentDate);
     const [selectedTime, setSelectedTime] = useState('');
- 
+    const [guests, setGuests] = useState(1);
+    const [occasion, setOccasion] = useState('');
     function handleDateChange(event) {
         setSelectedDate(event.target.value);
         props.setAvailableTimes({selectedDate: selectedDate});
@@ -22,6 +23,16 @@ function ReservationsForm(props) {
         console.log(selectedTime);
     }
 
+    function handleSubmit(event){
+        event.preventDefault();
+        props.onSubmit({
+            selectedDate,
+            selectedTime,
+            occasion,
+            guests
+        })
+
+    }
    
 
     return (
@@ -54,15 +65,24 @@ function ReservationsForm(props) {
                     min='1'
                     max='10'
                     id='guests'
+                    value={guests}
+                    onChange={(e)=>{
+                        setGuests(e.target.value)
+                    }}
                 />
 
                 <label htmlFor='occasion'>Occasion: </label>
-                <select id='occasion'>
+                <select id='occasion'
+                    value = {occasion}
+                    onChange= {(e)=>{
+                        setOccasion(e.target.value);
+                    }}
+                >
                     <option>Birthday</option>
                     <option>Anniversary</option>
                 </select>
 
-                <input type='submit' value="Make Your Reservation" className='submit-button' />
+                <input type='submit' value="Make Your Reservation" className='submit-button' onClick={handleSubmit}/>
             </form>
         </div>
     )
