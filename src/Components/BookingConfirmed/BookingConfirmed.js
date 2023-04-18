@@ -8,15 +8,28 @@ function BookingConfirmed(props){
     const formData = location.state;
 
     return(
-        <main>
+        <main className='centered-main'>
+            <div className='receipt'>
             <h2>
-                Your booking has been confirmed. Details are as follows
-                <h3><strong>Date:</strong> formData.date</h3>
-                selectedDate,
-            selectedTime,
-            occasion,
-            guests
+                Your booking has been confirmed.
             </h2>
+                <div className='booking-details'>
+                <div>
+                <div className='detail'>
+                <h3><strong>Date:</strong> </h3> <h3> {formData.selectedDate}</h3>
+                </div>
+                <div className='detail'>
+                <h3><strong>Time:</strong> </h3> <h3> {formData.selectedTime}</h3>
+                </div>
+                <div className='detail'>
+                <h3><strong>Occasion:</strong> </h3> <h3> {formData.occasion}</h3>
+                </div>
+                <div className='detail'>
+                <h3><strong>No. of Guests:</strong> </h3> <h3> {formData.guests}</h3>
+                </div>
+                </div>
+                </div>
+            </div>
         </main>
     )
 }

@@ -1,0 +1,30 @@
+
+.centered-main{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+   
+}
+
+.receipt{
+
+    background-color: var(--primary-color-1);
+    padding: 20px 20px;
+    color: white;
+    border-radius: 16px;
+    margin: auto;
+}
+
+
+.receipt > h2{
+    padding-bottom: 40px;
+    
+}
+.detail{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    height: fit-content;
+    
+}
