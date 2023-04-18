@@ -33,7 +33,7 @@ function Main(){
     return(
         <main>
             <Routes>
-                <Route path='/' element = { <><Hero /> <Highglights /></>} />
+                <Route path='/little-lemon' element = { <><Hero /> <Highglights /></>} />
                 <Route path = '/about' element = {<>   <Testimonials /> <About /></>} />
                 <Route path = '/booking' element = { <Reservations availableTimes={state} setAvailableTimes={dispatch} onSubmit = {handleSubmit}/> } />
                 <Route path = '/booking-confirmation' element = {<BookingConfirmed/>}/>

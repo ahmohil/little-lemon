@@ -14,7 +14,7 @@ function Navbar(){
             </div>
             <div className='navbar'>
                 <ul>
-                    <li><Link to="/" className='nav-link'>Home</Link></li>
+                    <li><Link to="/little-lemon" className='nav-link'>Home</Link></li>
                     <li><Link to="/about" className='nav-link'>About</Link></li>
                     <li><Link to="/menu" className='nav-link'>Menu</Link></li>
                     <li><Link to="/booking" className='nav-link'>Reservations</Link></li>
