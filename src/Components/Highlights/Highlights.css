@@ -2,9 +2,7 @@
 
 .heading-container{
     display: flex;
-    margin-left: 10%;
     justify-content: space-between;
-    margin-right: 10%;
     align-items: center;
 
 }
@@ -15,8 +13,13 @@
 
 .highlights{
     margin-top:80px;
+    width: 100vw;
 }
 
+.highlights-container{
+    padding-left: var(--margin-primary);
+    padding-right: var(--margin-primary);
+}
 
 .item-card{
     max-width: 265px;
@@ -27,7 +30,7 @@
 
 .specials{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .item-card img{
@@ -60,6 +63,6 @@
 }
 
 .specials{
-    padding:40px;
+    padding-top:40px;
 }
 

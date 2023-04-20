@@ -1,4 +1,4 @@
-footer{
+.footer-container{
     background-color: var(--primary-color-1);
     width: 100vw;
     display: grid;
@@ -6,11 +6,15 @@ footer{
     grid-template-columns: repeat(12,1fr);
     align-items: top;
     height: auto;
+    margin-top: 30px;
+
+    padding-right: var(--margin-primary);
+    padding-left: var(--margin-primary);
 }
 
 .footerLogo{
-    grid-column-start: 3;
-    grid-column-end: 5 ;
+    grid-column-start: 1;
+    grid-column-end: 3 ;
     position: relative;
     width: 130px;
     height: auto;
@@ -18,11 +22,16 @@ footer{
 }
 
 .sitemap{
-    grid-column-start: 5;
-    grid-column-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 5;
     color: white;
     display: grid;
     padding: 30px 0px;
+    text-decoration: none;
+}
+
+.sitemap ul{
+    text-decoration: none;
 }
 
 .footer-heading{
@@ -31,6 +40,7 @@ footer{
 .sitemap a{
     font-weight: 500;
     color: white;
+    text-decoration: none;
 }
 
 .contact-us li{
@@ -40,7 +50,7 @@ footer{
 
 
 .contact-us{
-    grid-column-start: 6;
+    grid-column-start: 5;
     grid-column-end: 8;
     color: white;
     display: grid;
@@ -50,7 +60,7 @@ footer{
 
 .contact{
     grid-column-start: 8;
-    grid-column-end: 10;
+    grid-column-end: 12;
     color: white;
     display: grid;
     padding:30px 0px;

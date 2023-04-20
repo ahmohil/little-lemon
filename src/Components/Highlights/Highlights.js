@@ -7,6 +7,7 @@ import {RiEBike2Fill} from 'react-icons/ri'
 function Highglights() {
     return (
         <div className="highlights">
+            <div className='highlights-container'>
             <div className="heading-container">
                 <h2>Specials</h2>
                 <button className = "btn">
@@ -46,7 +47,7 @@ function Highglights() {
                 </article>
             </section>
             
-
+            </div>
         </div>
     )
 
