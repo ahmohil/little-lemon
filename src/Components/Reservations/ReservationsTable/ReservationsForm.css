@@ -1,3 +1,18 @@
 .submit-button{
     width: 300px;
 }
+
+.form-input{
+    min-width: 200px;
+    height: 25px;
+    border-radius: 7px;
+    border-color: grey;
+}
+
+.reservation-form{
+    margin-bottom: 20px;
+}
+
+option{
+    font-size: larger;
+}

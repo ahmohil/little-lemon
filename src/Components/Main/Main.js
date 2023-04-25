@@ -7,6 +7,7 @@ import {Routes, Route, useNavigate} from 'react-router-dom';
 import Reservations from '../Reservations/Reservations';
 import React, {useReducer, useState} from 'react';
 import {fetchAPI, submitAPI}from '../../api';
+import Menu from '../Menu/Menu'
 
 function Main(){
     
@@ -37,6 +38,7 @@ function Main(){
                 <Route path = '/about' element = {<>   <Testimonials /> <About /></>} />
                 <Route path = '/booking' element = { <Reservations availableTimes={state} setAvailableTimes={dispatch} onSubmit = {handleSubmit}/> } />
                 <Route path = '/booking-confirmation' element = {<BookingConfirmed/>}/>
+                <Route path = '/menu' element={<Menu/>}/>
             </Routes>
         </main>
     )

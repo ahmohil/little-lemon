@@ -5,6 +5,8 @@ import Logo from '../../Assets/icons_assets/Logo.svg'
 import {Link} from 'react-router-dom';
 import {RxHamburgerMenu} from 'react-icons/rx';
 
+import './Navbar.css'
+
 function Navbar(){
     
     
@@ -23,8 +25,8 @@ function Navbar(){
                     <li><Link to="/login" className='nav-link'>Login</Link></li>
                 </ul> 
             </div>
-            <div className='socialLinks'>
-                
+            <div className='navbar-toggle'>
+                {RxHamburgerMenu}
             </div>
         </div>
  

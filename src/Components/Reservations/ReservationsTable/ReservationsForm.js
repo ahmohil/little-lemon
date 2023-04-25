@@ -46,10 +46,11 @@ function ReservationsForm(props) {
                     min={currentDate}
                     value={selectedDate}
                     onChange={handleDateChange}
+                    className='form-input'
                 />
                 {console.log(selectedTime)}
                 <label htmlFor='reservation-time'>Chose time: </label>
-                <select id='reservation-time' value={selectedTime} onChange={handleTimeChange} required>
+                <select className='form-input' id='reservation-time' value={selectedTime} onChange={handleTimeChange} required>
                     <option value=''>Select a time</option>
                     {
                         props.availableTimes.map((t) => (
@@ -73,6 +74,7 @@ function ReservationsForm(props) {
                     onChange={(e) => {
                         setGuests(e.target.value)
                     }}
+                    className='form-input'
                 />
 
                 <label htmlFor="occasion">Occasion</label>
@@ -81,7 +83,8 @@ function ReservationsForm(props) {
                     name="occasion"
                     value={occasion}
                     onChange={(e) => setOccasion(e.target.value)}
-                    required>
+                    required
+                    className='form-input'>
                     <option value="">Select an occasion</option>
                     <option value="Birthday">Birthday</option>
                     <option value="Anniversary">Anniversary</option>

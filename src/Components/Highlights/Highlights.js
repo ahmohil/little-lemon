@@ -3,14 +3,17 @@ import salad from '../../Assets/icons_assets/greek_salad.jpg'
 import bruchetta from '../../Assets/icons_assets/bruchetta.svg'
 import dessert from '../../Assets/icons_assets/lemon_dessert.jpg'
 import {RiEBike2Fill} from 'react-icons/ri'
+import { useNavigate } from 'react-router-dom'
 
 function Highglights() {
+
+    const navigate = useNavigate();
     return (
         <div className="highlights">
             <div className='highlights-container'>
             <div className="heading-container">
                 <h2>Specials</h2>
-                <button className = "btn">
+                <button className = "btn" onClick={()=>{navigate('/menu')}}>
                     Online Menu
                 </button>
             </div>

@@ -1,0 +1,13 @@
+.menu{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+
+.menu-heading{
+    text-align: center;
+    margin: 20px 0px;
+    color: var(--primary-color-1);
+}

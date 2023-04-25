@@ -2,7 +2,7 @@
     background-color: var(--primary-color-1);
     width: 100vw;
     display: grid;
-    gap: 20px;
+    gap: 0px;
     grid-template-columns: repeat(12,1fr);
     align-items: top;
     height: auto;
@@ -75,8 +75,8 @@ footer ul{
 @media screen and (max-width:920px){
     
 .footerLogo{
-    grid-column-start: 3;
-    grid-column-end: 7 ;
+    grid-column-start: 1;
+    grid-column-end: 4 ;
     position: relative;
     width: 130px;
     height: auto;
@@ -85,7 +85,7 @@ footer ul{
 
 .sitemap{
     grid-column-start: 7;
-    grid-column-end: 10;
+    grid-column-end: 12;
     color: white;
     display: grid;
     padding: 30px 0px;
@@ -93,8 +93,8 @@ footer ul{
 
 
 .contact-us{
-    grid-column-start: 3;
-    grid-column-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 2;
     color: white;
     display: grid;
@@ -104,7 +104,7 @@ footer ul{
 
 .contact{
     grid-column-start: 7;
-    grid-column-end: 10;
+    grid-column-end: 12;
     grid-row-start: 2;
     color: white;
     display: grid;
@@ -115,8 +115,53 @@ footer ul{
 
 }
 
+@media screen and (max-width:450px){
+    
+    .footerLogo{
+        grid-column-start: 4;
+        grid-column-end: 12 ;
+        position: relative;
+        width: 130px;
+        height: auto;
+        top: 10px;
+    }
+    
+    .sitemap{
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        color: white;
+        display: grid;
+        padding: 30px 0px;
+    }
+    
+    
+    .contact-us{
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 3;
+        color: white;
+        display: grid;
+        padding:30px 0px;
+        margin: 0px;
+    }
+    
+    .contact{
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 4;
+        color: white;
+        display: grid;
+        padding:30px 0px;
+        margin: 0px;
+    }
+
+
+}
+
 .social-links{
     display: flex;
     justify-content: space-between;
     max-width: 150px;
 }
+
