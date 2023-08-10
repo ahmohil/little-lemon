@@ -1,0 +1,11 @@
+.notFound{
+    height: 80vh;
+}
+
+.center-notFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}

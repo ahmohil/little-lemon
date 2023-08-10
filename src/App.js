@@ -29,10 +29,11 @@ function App() {
     <div className="App">
     
       <div className='top-nav'>
+        <span className='header1'>
         <Header />
-      
-      <Navbar selectedPage={selectedPage} onPageChange={handlePageChange} />
-      <Hamburger selectedPage={selectedPage} onPageChange={handlePageChange} />
+        <Navbar selectedPage={selectedPage} onPageChange={handlePageChange} />
+        <Hamburger selectedPage={selectedPage} onPageChange={handlePageChange} />
+        </span>
       </div>
       <main>
         <Main />

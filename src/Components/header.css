@@ -56,8 +56,7 @@
   }
 
   .top-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
+    padding-left: var(--margin-primary);
+    padding-right: var(--margin-primary);
+    width: 100vw;
   }

@@ -7,7 +7,10 @@ function Menu(){
         <main className='menu'>
             <div>
                 <h2 className='menu-heading'>MENU</h2>
-                <img src={MenuImg} />   
+                <div style={ {display:'flex', justifyContent:'center' }}>
+                    <img src={MenuImg} alt='menu'/>   
+
+                </div>    
             </div>
             
         </main>

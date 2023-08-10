@@ -7,6 +7,7 @@
     height: 25px;
     border-radius: 7px;
     border-color: grey;
+    padding: 0;
 }
 
 .reservation-form{
@@ -15,4 +16,16 @@
 
 option{
     font-size: larger;
+}
+
+.reservation-heading{
+    background-color: #495e57;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Markazi-Text;
+    font-weight: 500;
+    padding-block: 2.3rem;
+    font-size: 2rem;
+    width: 100vw;
 }

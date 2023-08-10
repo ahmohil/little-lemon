@@ -1,17 +1,22 @@
 .footer-container{
-    background-color: var(--primary-color-1);
-    width: 100vw;
+    width: calc(100% - var(--margin-primary));
     display: grid;
     gap: 0px;
     grid-template-columns: repeat(12,1fr);
     align-items: top;
     height: auto;
     margin-top: 30px;
-
-    padding-right: var(--margin-primary);
-    padding-left: var(--margin-primary);
+    
+    
 }
 
+
+.footer-bg{
+    background-color: var(--primary-color-1);
+    padding-right: var(--margin-primary);
+    padding-left: var(--margin-primary);
+    width: 100vw;
+}
 .footerLogo{
     grid-column-start: 1;
     grid-column-end: 3 ;
@@ -21,6 +26,11 @@
     top: 10px;
 }
 
+.footer-ul a li{
+    padding: none;
+    margin: none;
+    
+}
 .sitemap{
     grid-column-start: 3;
     grid-column-end: 5;
@@ -38,14 +48,15 @@
     margin-bottom: 30px;
 }
 .sitemap a{
-    font-weight: 500;
+    font-weight: 300;
     color: white;
     text-decoration: none;
 }
 
 .contact-us li{
-    font-weight: 400;
+    font-weight: 300;
     color: white;
+    margin-bottom: 1rem;
 }
 
 
@@ -165,3 +176,9 @@ footer ul{
     max-width: 150px;
 }
 
+
+.footer-ul{
+    list-style-type: none;
+    text-decoration: none;
+    
+}

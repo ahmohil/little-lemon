@@ -3,7 +3,6 @@
     max-width: 600px;
     gap: 20px;
 
-    grid-template-columns: 1fr 1fr;
 }
 
 .submit-button{
@@ -12,14 +11,13 @@
 }
 
 .reservation-page{
-    display: flex;
-    justify-content: center;
     height: 70vh;
     margin-bottom: 50px;
 }
 
-.reservation-page h2{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+.centred-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100vw;
 }

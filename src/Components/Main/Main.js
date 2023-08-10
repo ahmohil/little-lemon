@@ -2,6 +2,8 @@ import Hero from '../Hero/Hero';
 import Highglights from '../Highlights/Highlights';
 import Testimonials from '../Testimonials/Testimonials';
 import BookingConfirmed from '../BookingConfirmed/BookingConfirmed';
+import Login from '../Login/Login';
+import NotFound from '../NotFound/NotFound';
 import About from '../About/About';
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import Reservations from '../Reservations/Reservations';
@@ -34,11 +36,13 @@ function Main(){
     return(
         <main>
             <Routes>
-                <Route path='/little-lemon' element = { <><Hero /> <Highglights /></>} />
-                <Route path = '/about' element = {<>   <Testimonials /> <About /></>} />
-                <Route path = '/booking' element = { <Reservations availableTimes={state} setAvailableTimes={dispatch} onSubmit = {handleSubmit}/> } />
-                <Route path = '/booking-confirmation' element = {<BookingConfirmed/>}/>
-                <Route path = '/menu' element={<Menu/>}/>
+                <Route exact path='/little-lemon' element = { <><Hero /> <Highglights /></>} />
+                <Route exact path = '/about' element = {<>   <Testimonials /> <About /></>} />
+                <Route exact path = '/booking' element = { <Reservations availableTimes={state} setAvailableTimes={dispatch} onSubmit = {handleSubmit}/> } />
+                <Route exact path = '/booking-confirmation' element = {<BookingConfirmed/>}/>
+                <Route exact path = '/login' element={<Login/>}/>
+                <Route exact path = '/menu' element={<Menu/>}/>
+                <Route path= '*' element={<NotFound/>} />
             </Routes>
         </main>
     )

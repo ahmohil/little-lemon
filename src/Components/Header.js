@@ -20,6 +20,7 @@ function Header () {
     const style = {
         cursor: 'pointer'
     }
+    
     return (
         <header className='logo'>
             <Logo style={style} id='logo'/>
